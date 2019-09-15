@@ -1,6 +1,6 @@
 {
- "short_name": "Moonshine",
- "name": "Moonshine | Scalable and Maintainable Architecture",
+ "short_name": "JACKRO",
+ "name": "JACKRO - Jack Ryan Oracoy",
  "icons": [
   {
    "src": "assets/app-icon/android-icon-36x36.png",
@@ -40,7 +40,7 @@
   }
  ],
  "start_url": "index.html",
- "background_color": "#263238",
+ "background_color": "#B71C1C",
  "display": "standalone",
- "theme_color": "#263238"
+ "theme_color": "#B71C1C"
 }
