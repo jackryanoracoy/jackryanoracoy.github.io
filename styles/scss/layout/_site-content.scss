@@ -7,7 +7,7 @@
   padding: 20px 0;
   background-color: #F5F5F5;
 
-  @include media-breakpoint-min(md) {
+  @include media-breakpoint-min(lg) {
     padding: 50px 0;
   }
 }

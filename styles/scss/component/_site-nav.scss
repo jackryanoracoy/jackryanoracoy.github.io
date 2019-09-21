@@ -6,15 +6,30 @@
   display: flex;
   flex-direction: column;
   list-style: none;
+  transition: $transition;
+
+  &--alt {
+    font-weight: 300;
+
+    &:not(:hover) { opacity: 0.5; }
+  }
+
+  &--icon {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+  }
 
   &__item {
+    position: relative;
     overflow: hidden;
   }
 
   &__item a {
     display: block;
+    min-width: $nav-height;
     padding: 0 10px;
-    color: #FFF;
+    color: $light;
     font-size: 1.5rem;
     line-height: $nav-height;
     text-decoration: none;
@@ -23,12 +38,28 @@
     white-space: nowrap;
   }
 
-  &__item a:hover,
-  &__item--active a {
-    background-color: $primary;
-  }
-
-  @include media-breakpoint-min(md) {
+  @include media-breakpoint-min(lg) {
     flex-direction: row;
+
+    &__item::after {
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 10px;
+      content: "";
+      margin: auto;
+      width: 0;
+      height: 1px;
+      background-color: $light;
+      border-radius: 0 0 2px 2px;
+      opacity: 0;
+      transition: $transition;
+    }
+
+    &__item:hover::after,
+    &__item--active::after {
+      width: calc(100% - 20px);
+      opacity: 0.95;
+    }
   }
 }
