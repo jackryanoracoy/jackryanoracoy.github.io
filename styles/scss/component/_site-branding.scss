@@ -10,8 +10,8 @@
   font-family: $font-secondary;
   font-size: $font-xl;
   font-weight: 700;
-  text-decoration: none !important;
   line-height: 1;
+  text-decoration: none !important;
   white-space: nowrap;
 
   &__logo {
@@ -22,6 +22,19 @@
   &__title {
     padding-left: 10px;
     font-size: inherit;
+  }
+
+  &__easter-egg {
+    opacity: 1;
+    transition: $transition;
+  }
+
+  &:not(:hover) &__easter-egg {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    opacity: 0;
+    overflow: hidden;
   }
 
   @include media-breakpoint-min(lg) {

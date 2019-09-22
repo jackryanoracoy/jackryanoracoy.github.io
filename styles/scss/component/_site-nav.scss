@@ -8,6 +8,13 @@
   list-style: none;
   transition: $transition;
 
+  &:hover &__item {
+    opacity: 0.5;
+    transition: $transition;
+
+    &:hover { opacity: 1; }
+  }
+
   &--alt {
     font-weight: 300;
 
@@ -45,19 +52,18 @@
       position: absolute;
       right: 0;
       left: 0;
-      bottom: 10px;
+      bottom: 5px;
       content: "";
       margin: auto;
       width: 0;
       height: 1px;
       background-color: $light;
-      border-radius: 0 0 2px 2px;
       opacity: 0;
       transition: $transition;
     }
 
-    &__item:hover::after,
-    &__item--active::after {
+    &:hover &__item:hover::after,
+    &:hover &__item--active::after {
       width: calc(100% - 20px);
       opacity: 0.95;
     }

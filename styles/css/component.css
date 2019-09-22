@@ -286,6 +286,14 @@
   -webkit-transition: all 300ms ease-in-out 120ms;
   transition: all 300ms ease-in-out 120ms;
 }
+.c-site-nav:hover .c-site-nav__item {
+  opacity: 0.5;
+  -webkit-transition: all 300ms ease-in-out 120ms;
+  transition: all 300ms ease-in-out 120ms;
+}
+.c-site-nav:hover .c-site-nav__item:hover {
+  opacity: 1;
+}
 .c-site-nav--alt {
   font-weight: 300;
 }
@@ -329,18 +337,17 @@
     position: absolute;
     right: 0;
     left: 0;
-    bottom: 10px;
+    bottom: 5px;
     content: "";
     margin: auto;
     width: 0;
     height: 1px;
     background-color: #FAFAFA;
-    border-radius: 0 0 2px 2px;
     opacity: 0;
     -webkit-transition: all 300ms ease-in-out 120ms;
     transition: all 300ms ease-in-out 120ms;
   }
-  .c-site-nav__item:hover::after, .c-site-nav__item--active::after {
+  .c-site-nav:hover .c-site-nav__item:hover::after, .c-site-nav:hover .c-site-nav__item--active::after {
     width: calc(100% - 20px);
     opacity: 0.95;
   }
@@ -361,8 +368,8 @@
   font-family: "Open Sans Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 2.4rem;
   font-weight: 700;
-  text-decoration: none !important;
   line-height: 1;
+  text-decoration: none !important;
   white-space: nowrap;
 }
 .c-site-branding__logo {
@@ -373,11 +380,23 @@
   padding-left: 10px;
   font-size: inherit;
 }
+.c-site-branding__easter-egg {
+  opacity: 1;
+  -webkit-transition: all 300ms ease-in-out 120ms;
+  transition: all 300ms ease-in-out 120ms;
+}
+.c-site-branding:not(:hover) .c-site-branding__easter-egg {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  opacity: 0;
+  overflow: hidden;
+}
 @media (min-width: 992px) {
   .c-site-branding {
     height: 75px;
     font-size: 2.8rem;
   }
 }
-
 /*# sourceMappingURL=component.css.map */
