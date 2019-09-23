@@ -3233,22 +3233,6 @@ textarea {
 .c-site-nav:hover .c-site-nav__item:hover {
   opacity: 1;
 }
-.c-site-nav--alt {
-  font-weight: 300;
-}
-.c-site-nav--alt:not(:hover) {
-  opacity: 0.5;
-}
-.c-site-nav--icon {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  text-align: center;
-}
 .c-site-nav__item {
   position: relative;
   overflow: hidden;
@@ -3260,6 +3244,7 @@ textarea {
   color: #FAFAFA;
   font-size: 1.5rem;
   line-height: 50px;
+  text-align: center;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -3289,6 +3274,23 @@ textarea {
   .c-site-nav:hover .c-site-nav__item:hover::after, .c-site-nav:hover .c-site-nav__item--active::after {
     width: calc(100% - 20px);
     opacity: 0.95;
+  }
+  .c-site-nav__icon-title {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media (max-width: 991px) {
+  .c-site-nav__item a {
+    padding: 0 20px;
+    text-align: left;
+  }
+  .c-site-nav__icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
 }
 
