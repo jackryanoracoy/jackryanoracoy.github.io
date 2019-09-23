@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   height: $header-height_m;
-  color: $white !important;
+  color: $light !important;
   font-family: $font-secondary;
   font-size: $font-xl;
   font-weight: 700;
@@ -16,7 +16,7 @@
 
   &__logo {
     max-width: 100%;
-    max-height: calc(100% - 20px);
+    max-height: calc(100% - 10px);
   }
 
   &__title {
@@ -39,6 +39,7 @@
 
   @include media-breakpoint-min(lg) {
     height: $header-height;
+    color: $primary !important;
     font-size: $font-sl;
   }
 }

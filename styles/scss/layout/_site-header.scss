@@ -26,15 +26,14 @@
   }
 
   &__content {
-    padding: 0 10px;
-
     &:first-child {
       height: $header-height_m;
-      background-color: $primary; 
+      padding: 0 10px;
+      background-color: $primary;
     }
 
     &:last-child {
-      background-color: $secondary; 
+      background-color: $light;
     }
   }
 
@@ -65,15 +64,11 @@
     }
 
     &__content {
-      padding: 0 20px;
+      padding: 0 20px !important;
 
       &:first-child {
         height: $header-height;
-        background-image: linear-gradient(to top right, $primary, $secondary); 
-      }
-
-      &:last-child {
-        background-color: $primary; 
+        background-color: $grey-200;
       }
     }
 
