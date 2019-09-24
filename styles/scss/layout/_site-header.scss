@@ -12,38 +12,22 @@
 
   &,
   &.js-active.js-show,
-  &.js-menu-opened {
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-  }
+  &.js-menu-opened { box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2); }
 
-  &.js-active {
-    top: -$header-height_m;
-  }
+  &.js-active { top: -$header-height_m; }
 
   &.js-active.js-show,
-  &.js-menu-opened {
-    top: 0 !important;
-  }
+  &.js-menu-opened { top: 0 !important; }
 
-  &__content {
-    &:first-child {
-      height: $header-height_m;
-      padding: 0 10px;
-      background-color: $primary;
-    }
+  &__content { &:first-child {
+    height: $header-height_m;
+    padding: 0 10px;
+    background-color: $primary;
+  } &:last-child { background-color: $light; } }
 
-    &:last-child {
-      background-color: $light;
-    }
-  }
+  &__menu { max-width: 40px; }
 
-  &__menu {
-    max-width: 40px;
-  }
-
-  &__branding {
-    max-width: calc(100% - 40px);
-  }
+  &__branding { max-width: calc(100% - 40px); }
 
   &__navigation {
     display: flex;
@@ -54,43 +38,31 @@
     overflow: auto;
   }
 
-  &__navigation.js-show {
-    max-height: calc(100vh - #{$header-height_m});
-  }
+  &__navigation.js-show { max-height: calc(100vh - #{$header-height_m}); }
 
   @include media-breakpoint-min(lg) {
-    &.js-active {
-      top: -$header-height;
-    }
+    &.js-active { top: -$header-height; }
 
     &__content {
       padding: 0 20px !important;
+      transition: $transition;
 
-      &:first-child {
-        height: $header-height;
-        background-color: $grey-200;
-      }
+      &:first-child { height: $header-height; background-color: $grey-200; }
     }
 
-    &__branding,
-    &__action {
+    &__action,
+    &__branding {
       width: auto;
       max-width: 50%;
     }
 
-    &__branding {
-      width: auto;
-    }
+    &__branding { width: auto; }
 
-    &__navigation {
-      max-height: 100vh;
-    }
+    &__navigation { max-height: 100vh; }
   }
 
   @include media-breakpoint-max(lg) {
-    &.js-active {
-      box-shadow: none;
-    }
+    &.js-active { box-shadow: none; }
 
     &__action {
       position: fixed;
@@ -98,8 +70,6 @@
       bottom: 10px;
     }
 
-    &__navigation {
-      flex-direction: column;
-    }
+    &__navigation { flex-direction: column; }
   }
 }

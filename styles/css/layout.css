@@ -2450,12 +2450,14 @@
   }
   .l-site-header__content {
     padding: 0 20px !important;
+    -webkit-transition: all 300ms ease-in-out 120ms;
+    transition: all 300ms ease-in-out 120ms;
   }
   .l-site-header__content:first-child {
     height: 90px;
     background-color: #EEEEEE;
   }
-  .l-site-header__branding, .l-site-header__action {
+  .l-site-header__action, .l-site-header__branding {
     width: auto;
     max-width: 50%;
   }
@@ -2493,7 +2495,7 @@
 }
 @media (min-width: 992px) {
   .l-site-main {
-    padding: 125px 0 0;
+    padding: 150px 0 0;
   }
 }
 
@@ -2513,7 +2515,7 @@
 }
 @media (min-width: 992px) {
   .l-site-atf {
-    height: calc(100vh - 140px);
+    height: calc(100vh - 150px);
     max-height: 1000px;
   }
 }
@@ -2542,7 +2544,7 @@
 }
 @media (min-width: 992px) {
   .l-aside {
-    max-height: calc(100vh - (90px + 50px));
+    max-height: calc(100vh - (90px + 60px));
     overflow: auto;
   }
 }

@@ -17,15 +17,21 @@ $(document).ready(function($) {
       var scroll = $(window).scrollTop();
       if (scroll > lastScroll + 10) {
         $(".l-site-header").removeClass("js-show");
+        $(".c-site-nav__item--branding").addClass("js-show");
       } else if (scroll < lastScroll - 10) {
         $(".l-site-header").addClass("js-show");
+        $(".c-site-nav__item--branding").removeClass("js-show");
       }
 
-      if (scroll >= 100) {
+      if (scroll >= 140) {
         $(".l-site-header").addClass("js-active");
+        $(".c-site-nav__item--branding").addClass("js-active");
       } else {
         $(".l-site-header").removeClass("js-active");
-      } lastScroll = scroll;
+        $(".c-site-nav__item--branding").removeClass("js-active");
+      }
+
+      lastScroll = scroll;
     }, 300);
   });
 });
