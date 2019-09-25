@@ -58,7 +58,6 @@
       transition: $transition;
     }
 
-    &:hover &__item:hover::after,
     &:hover &__item--active::after {
       width: calc(100% - 20px);
       opacity: 0.95;

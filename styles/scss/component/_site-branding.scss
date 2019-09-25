@@ -27,24 +27,28 @@
     font-size: inherit;
   }
 
-  &__easter-egg {
-    color: $grey-900;
-    opacity: 1;
-    transition: $transition;
-  }
-
-  &:not(:hover) &__easter-egg {
-    position: absolute;
-    clip: rect(1px, 1px, 1px, 1px);
-    clip-path: inset(50%);
-    opacity: 0;
-    overflow: hidden;
-  }
-
   @include media-breakpoint-min(lg) {
     height: $header-height;
     color: $primary !important;
     font-size: $font-ml;
+
+    &__easter-egg {
+      color: $grey-900;
+      opacity: 1;
+      transition: $transition;
+    }
+
+    &:not(:hover) &__easter-egg {
+      position: absolute;
+      clip: rect(1px, 1px, 1px, 1px);
+      clip-path: inset(50%);
+      opacity: 0;
+      overflow: hidden;
+    }
+  }
+
+  @include media-breakpoint-max(lg) {
+    &__easter-egg { display: none; }
   }
 }
 

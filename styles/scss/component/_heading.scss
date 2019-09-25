@@ -9,30 +9,33 @@
 
 .c-heading-above-the-fold {
   color: $light;
-  font-size: 3rem;
+  font-size: $font-sl;
   letter-spacing: 0.25em;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1),
+               0 1px 4px rgba(0, 0, 0, 0.15);
 
-  &__easter-egg {
-    color: $grey-900;
-    animation-name: fadein;
-    animation-duration: 300ms;
-    animation-delay: 800ms;
-    animation-fill-mode: both;
-  }
-
-  @keyframes fadein {
-    from {
-      margin-left: -75px;
-      opacity: 0;
-    }
-    to {
-      margin-left: 0;
-      opacity: 1;
-    }
-  }
 
   @include media-breakpoint-min(md) {
-    font-size: 3.5rem;
+    font-size: $font-ml;
+
+    &__easter-egg {
+      color: $grey-300;
+      animation-name: fadein;
+      animation-duration: 300ms;
+      animation-delay: 1200ms;
+      animation-fill-mode: both;
+    }
+
+    @keyframes fadein {
+      from {
+        margin-left: -100%;
+        opacity: 0;
+      }
+      to {
+        margin-left: 0;
+        opacity: 1;
+      }
+    }
   }
 }
 
