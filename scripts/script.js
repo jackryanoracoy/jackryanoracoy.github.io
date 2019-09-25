@@ -15,20 +15,18 @@ $(document).ready(function($) {
     $(window).scroll(function() {
     setTimeout(function() {
       var scroll = $(window).scrollTop();
-      if (scroll > lastScroll + 10) {
+      if (scroll > lastScroll) {
         $(".l-site-header").removeClass("js-show");
         $(".c-site-nav__item--branding").addClass("js-show");
-      } else if (scroll < lastScroll - 10) {
+      } else if (scroll < lastScroll) {
         $(".l-site-header").addClass("js-show");
         $(".c-site-nav__item--branding").removeClass("js-show");
       }
 
       if (scroll >= 140) {
-        $(".l-site-header").addClass("js-active");
-        $(".c-site-nav__item--branding").addClass("js-active");
+        $(".l-site-header, .c-site-nav__item--branding").addClass("js-active");
       } else {
-        $(".l-site-header").removeClass("js-active");
-        $(".c-site-nav__item--branding").removeClass("js-active");
+        $(".l-site-header, .c-site-nav__item--branding").removeClass("js-active");
       }
 
       lastScroll = scroll;
