@@ -10,7 +10,26 @@
 .c-heading-above-the-fold {
   color: $light;
   font-size: 3rem;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.25em;
+
+  &__easter-egg {
+    color: $grey-900;
+    animation-name: fadein;
+    animation-duration: 300ms;
+    animation-delay: 800ms;
+    animation-fill-mode: both;
+  }
+
+  @keyframes fadein {
+    from {
+      margin-left: -75px;
+      opacity: 0;
+    }
+    to {
+      margin-left: 0;
+      opacity: 1;
+    }
+  }
 
   @include media-breakpoint-min(md) {
     font-size: 3.5rem;

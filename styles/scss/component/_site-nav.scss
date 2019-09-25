@@ -36,6 +36,11 @@
     white-space: nowrap;
   }
 
+  &__logo {
+    display: block;
+    max-height: $nav-height;
+  }
+
   @include media-breakpoint-min(lg) {
     flex-direction: row;
 
