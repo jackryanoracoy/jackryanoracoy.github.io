@@ -84,7 +84,9 @@
 
   @include media-breakpoint-max(lg) {
     &__item a {
+      min-width: $nav-height_m;
       padding: 0 20px 0 70px;
+      line-height: $nav-height_m;
       text-align: left;
     }
 

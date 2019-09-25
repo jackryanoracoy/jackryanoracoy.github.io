@@ -3301,7 +3301,9 @@ textarea {
 }
 @media (max-width: 991px) {
   .c-site-nav__item a {
+    min-width: 50px;
     padding: 0 20px 0 70px;
+    line-height: 50px;
     text-align: left;
   }
   .c-site-nav__icon {
@@ -11777,4 +11779,5 @@ textarea {
 .u-image-block {
   display: block;
 }
+
 /*# sourceMappingURL=all.css.map */
