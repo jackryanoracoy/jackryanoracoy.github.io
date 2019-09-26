@@ -9,7 +9,7 @@
 
 .c-heading-above-the-fold {
   color: $light;
-  font-size: $font-sl;
+  font-size: $font-xl;
   letter-spacing: 0.25em;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1),
                0 1px 4px rgba(0, 0, 0, 0.15);
@@ -27,33 +27,27 @@
     }
 
     @keyframes fadein {
-      from {
-        margin-left: -100%;
-        opacity: 0;
-      }
-      to {
-        margin-left: 0;
-        opacity: 1;
-      }
+      from { margin-left: -100%; opacity: 0; }
+      to { margin-left: 0; opacity: 1; }
     }
   }
 }
 
 .c-heading-section {
   color: $grey-700;
-  font-size: 2.4rem;
+  font-size: $font-xl;
   letter-spacing: 0.2rem;
 
   @include media-breakpoint-min(md) {
-    font-size: 2.8rem;
+    font-size: $font-sl;
   }
 }
 
 .c-heading-article {
   color: $grey-900;
-  font-size: 1.6rem;
+  font-size: $font-nm;
 
   @include media-breakpoint-min(md) {
-    font-size: 1.8rem;
+    font-size: $font-lg;
   }
 }
