@@ -13,7 +13,7 @@
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 25px;
-  background-color: $primary;
+  background: linear-gradient(to bottom right, $primary, $secondary);
   box-shadow: $z-depth-1;
   white-space: nowrap;
 
@@ -35,38 +35,43 @@
     padding: 0 20px;
   }
 
+  &--full {
+    display: block;
+    width: 100%;
+  }
+
   &--secondary {
     color: $light !important;
-    background-color: $secondary;
+    background: $secondary;
   }
 
   &--light {
     color: $dark !important;
-    background-color: $light;
+    background: $light;
   }
 
   &--dark {
     color: $light !important;
-    background-color: $dark;
+    background: $dark;
   }
 
   &--success {
     color: $light !important;
-    background-color: $success;
+    background: $success;
   }
 
   &--warnig {
     color: $light !important;
-    background-color: $warning;
+    background: $warning;
   }
 
   &--danger {
     color: $light!important;
-    background-color: $danger;
+    background: $danger;
   }
 
   &--info {
     color: $light !important;
-    background-color: $info;
+    background: $info;
   }
 }

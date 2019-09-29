@@ -51,3 +51,13 @@
     font-size: $font-lg;
   }
 }
+
+.c-heading-item {
+  max-width: 100%;
+  font-size: $font-nm;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+  &--featured { white-space: normal !important; }
+}

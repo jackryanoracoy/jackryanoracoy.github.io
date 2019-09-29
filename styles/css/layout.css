@@ -2519,6 +2519,7 @@
 @media (min-width: 992px) {
   .l-site-atf {
     height: calc(100vh - 150px);
+    min-height: 720px;
     max-height: 1000px;
   }
 }
@@ -2532,7 +2533,7 @@
   background-color: #FAFAFA;
 }
 .l-site-content--alt {
-  padding: 0 0 30px !important;
+  padding: 0 !important;
 }
 @media (min-width: 768px) {
   .l-site-content {

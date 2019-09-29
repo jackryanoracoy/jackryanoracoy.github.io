@@ -20,6 +20,13 @@
     max-height: calc(100% - 10px);
 
     & img { height: 100%; }
+
+    @at-root {
+      .no-picture & {
+        display: block;
+        max-width: $header-height;
+      }
+    }
   }
 
   &__title {

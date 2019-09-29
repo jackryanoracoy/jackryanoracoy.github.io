@@ -3,7 +3,6 @@
 --------------------------------------------------*/
 
 .c-card {
-  height: auto;
   color: $dark !important;
   background-color: $light;
   border-radius: 2px;
@@ -14,5 +13,12 @@
     background-color: $dark;
   }
 
-  &__content { padding: 20px; }
+  &__image {
+    height: 200px;
+  }
+
+  &__content {
+    height: calc(100% - 200px);
+    padding: 20px;
+  }
 }

@@ -7,7 +7,7 @@
   padding: ($section-gutter / 2) 0;
   background-color: $light;
 
-  &--alt { padding: 0 0 ($section-gutter / 2) !important; }
+  &--alt { padding: 0 !important; }
 
   @include media-breakpoint-min(md) {
     padding: $section-gutter 0;

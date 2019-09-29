@@ -2913,6 +2913,7 @@ textarea {
 @media (min-width: 992px) {
   .l-site-atf {
     height: calc(100vh - 150px);
+    min-height: 720px;
     max-height: 1000px;
   }
 }
@@ -2926,7 +2927,7 @@ textarea {
   background-color: #FAFAFA;
 }
 .l-site-content--alt {
-  padding: 0 0 30px !important;
+  padding: 0 !important;
 }
 @media (min-width: 768px) {
   .l-site-content {
@@ -3002,7 +3003,8 @@ textarea {
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 25px;
-  background-color: #B71C1C;
+  background: -webkit-gradient(linear, left top, right bottom, from(#B71C1C), to(#880E4F));
+  background: linear-gradient(to bottom right, #B71C1C, #880E4F);
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(0, 0, 0, 0.15);
   white-space: nowrap;
@@ -3020,40 +3022,43 @@ textarea {
   border-radius: 30px;
   padding: 0 20px;
 }
+.c-button--full {
+  display: block;
+  width: 100%;
+}
 .c-button--secondary {
   color: #FAFAFA !important;
-  background-color: #880E4F;
+  background: #880E4F;
 }
 .c-button--light {
   color: #212121 !important;
-  background-color: #FAFAFA;
+  background: #FAFAFA;
 }
 .c-button--dark {
   color: #FAFAFA !important;
-  background-color: #212121;
+  background: #212121;
 }
 .c-button--success {
   color: #FAFAFA !important;
-  background-color: #4CAF50;
+  background: #4CAF50;
 }
 .c-button--warnig {
   color: #FAFAFA !important;
-  background-color: #FF9800;
+  background: #FF9800;
 }
 .c-button--danger {
   color: #FAFAFA !important;
-  background-color: #F44336;
+  background: #F44336;
 }
 .c-button--info {
   color: #FAFAFA !important;
-  background-color: #00BCD4;
+  background: #00BCD4;
 }
 
 /*--------------------------------------------------
   Card
 --------------------------------------------------*/
 .c-card {
-  height: auto;
   color: #212121 !important;
   background-color: #FAFAFA;
   border-radius: 2px;
@@ -3064,7 +3069,11 @@ textarea {
   color: #FAFAFA !important;
   background-color: #212121;
 }
+.c-card__image {
+  height: 200px;
+}
 .c-card__content {
+  height: calc(100% - 200px);
   padding: 20px;
 }
 
@@ -3177,6 +3186,17 @@ textarea {
   .c-heading-article {
     font-size: 1.8rem;
   }
+}
+
+.c-heading-item {
+  max-width: 100%;
+  font-size: 1.6rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.c-heading-item--featured {
+  white-space: normal !important;
 }
 
 /*--------------------------------------------------
@@ -3327,7 +3347,6 @@ textarea {
   .c-site-nav__item--branding {
     max-width: 0;
     opacity: 0;
-    background-color: #EEEEEE;
     -webkit-transition: all 500ms ease-in-out;
     transition: all 500ms ease-in-out;
   }
@@ -3389,6 +3408,10 @@ textarea {
 }
 .c-site-branding__logo img {
   height: 100%;
+}
+.no-picture .c-site-branding__logo {
+  display: block;
+  max-width: 90px;
 }
 .c-site-branding__title {
   padding-left: 10px;
