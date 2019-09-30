@@ -40,6 +40,8 @@
     width: 100%;
   }
 
+  &--edgy { border-radius: 2px; }
+
   &--secondary {
     color: $light !important;
     background: $secondary;
