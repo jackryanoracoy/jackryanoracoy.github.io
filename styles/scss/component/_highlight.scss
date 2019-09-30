@@ -9,7 +9,6 @@
   border-radius: 4px;
   overflow: auto;
 
-
   &--light {
     color: $dark;
     background-color: $light;
@@ -43,7 +42,9 @@
 
   &--grey {
     color: $dark;
-    background-color: $grey-300;
+    background-color: $grey-200;
   }
+
+  & a { color: inherit; }
 }
 

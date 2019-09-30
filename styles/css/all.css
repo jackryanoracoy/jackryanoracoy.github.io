@@ -2998,11 +2998,11 @@ textarea {
   padding: 0 15px;
   color: #FAFAFA !important;
   font-size: 1.5rem;
-  line-height: 50px;
+  line-height: 40px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  border-radius: 25px;
+  border-radius: 20px;
   background: -webkit-gradient(linear, left top, right bottom, from(#B71C1C), to(#880E4F));
   background: linear-gradient(to bottom right, #B71C1C, #880E4F);
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(0, 0, 0, 0.15);
@@ -3017,10 +3017,10 @@ textarea {
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 4px 4px -4px rgba(0, 0, 0, 0.2);
 }
 .c-button--large {
-  min-width: 60px;
-  line-height: 60px;
-  border-radius: 30px;
-  padding: 0 20px;
+  min-width: 50px;
+  line-height: 50px;
+  border-radius: 25px;
+  padding: 0 15px;
 }
 .c-button--full {
   display: block;
@@ -3128,7 +3128,10 @@ textarea {
 }
 .c-highlight--grey {
   color: #212121;
-  background-color: #E0E0E0;
+  background-color: #EEEEEE;
+}
+.c-highlight a {
+  color: inherit;
 }
 
 /*--------------------------------------------------
