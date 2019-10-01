@@ -2540,6 +2540,11 @@
     padding: 60px 0;
   }
 }
+@media (max-width: 575px) {
+  .l-site-content {
+    overflow: hidden;
+  }
+}
 
 /*--------------------------------------------------
   aside
@@ -2548,11 +2553,5 @@
   position: -webkit-sticky;
   position: sticky;
   top: 100px;
-}
-@media (min-width: 992px) {
-  .l-aside {
-    max-height: calc(100vh - (90px + 60px));
-    overflow: auto;
-  }
 }
 /*# sourceMappingURL=layout.css.map */

@@ -12,4 +12,8 @@
   @include media-breakpoint-min(md) {
     padding: $section-gutter 0;
   }
+
+  @include media-breakpoint-max(sm) {
+    overflow: hidden;
+  }
 }

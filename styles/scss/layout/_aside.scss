@@ -6,8 +6,9 @@
   position: sticky;
   top: 100px;
 
-  @include media-breakpoint-min(lg) {
-    max-height: calc(100vh - (#{$header-height} + #{$nav-height}));
-    overflow: auto;
-  }
+  // @include media-breakpoint-min(lg) {
+  //   max-height: calc(100vh - (#{$header-height} + #{$nav-height}));
+  //   overflow-y: auto;
+  //   overflow-x: hidden;
+  // }
 }

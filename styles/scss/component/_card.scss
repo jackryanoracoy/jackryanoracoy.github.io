@@ -14,6 +14,7 @@
   }
 
   &__image {
+    position: relative;
     height: 200px;
 
     & img {
@@ -25,11 +26,16 @@
   }
 
   &__content {
+    position: relative;
     height: calc(100% - 200px);
-    padding: 20px;
+    padding: 20px 10px;
   }
 
   @include media-breakpoint-min(md) {
     &__image--full, &__content--full { height: 100%; }
+  }
+
+  @include media-breakpoint-min(lg) {
+    &__content { padding: 20px; }
   }
 }
