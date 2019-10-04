@@ -1,3 +1,13 @@
+// JACKRO - Code & Design
+// The Free Code and Design Template for Developers and Designers.
+// Created using Moonshine, A Scalable and maintainable architecture.
+//
+// Author:   Jack Ryan Oracoy
+// Website:  https://jackryanoracoy.github.io
+// Email:    jackryanoracoy@gmail.com
+// URL:      https://github.com/jackryanoracoy/moonshine
+// License:  https://github.com/jackryanoracoy/moonshine/blob/master/LICENSE.txt
+
 /*--------------------------------------------------
   Button
 --------------------------------------------------*/
@@ -100,7 +110,21 @@
       font-family: 'Font Awesome 5 Free';
       font-weight: 900;
       text-align: center;
-      background-color: rgba($color: $light, $alpha: 0.2);
+      background-color: rgba($color: $light, $alpha: 0.15);
     }
+
+    &:hover::after { background-color: rgba($color: $light, $alpha: 0.25); }
+  }
+
+  &--fluid-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: $light !important;
+    background-color: rgba($color: $dark, $alpha: 0.75);
+    border-radius: 0;
+    box-shadow: none;
   }
 }

@@ -1,6 +1,7 @@
 /*!
- * Moonshine
- * Scalable and Maintainable Architecture.
+ * JACKRO - Code & Design
+ * The Free Code and Design Template for Developers and Designers.
+ * Created using Moonshine, A Scalable and maintainable architecture.
  *
  * Author:   Jack Ryan Oracoy
  * Website:  https://jackryanoracoy.github.io
@@ -13,7 +14,7 @@
 --------------------------------------------------*/
 .c-browser-notice {
   padding: 20px;
-  color: #FFFFFF;
+  color: #FAFAFA;
   text-align: center;
   background-color: #F44336;
 }
@@ -137,7 +138,28 @@
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   text-align: center;
-  background-color: rgba(250, 250, 250, 0.2);
+  background-color: rgba(250, 250, 250, 0.15);
+}
+.c-button--square-bar:hover::after {
+  background-color: rgba(250, 250, 250, 0.25);
+}
+.c-button--fluid-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #FAFAFA !important;
+  background-color: rgba(33, 33, 33, 0.75);
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 /*--------------------------------------------------
@@ -171,11 +193,13 @@
   padding: 20px 10px;
 }
 @media (min-width: 768px) {
-  .c-card__content {
-    padding: 20px;
-  }
   .c-card__image--full, .c-card__content--full {
     height: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .c-card__content {
+    padding: 20px;
   }
 }
 
@@ -553,4 +577,5 @@
     display: none;
   }
 }
+
 /*# sourceMappingURL=component.css.map */

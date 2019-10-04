@@ -1,6 +1,7 @@
 /*!
- * Moonshine
- * Scalable and Maintainable Architecture.
+ * JACKRO - Code & Design
+ * The Free Code and Design Template for Developers and Designers.
+ * Created using Moonshine, A Scalable and maintainable architecture.
  *
  * Author:   Jack Ryan Oracoy
  * Website:  https://jackryanoracoy.github.io
@@ -2472,10 +2473,6 @@
   }
 }
 @media (max-width: 991px) {
-  .l-site-header.js-active {
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
   .l-site-header__action {
     position: fixed;
     right: 10px;
