@@ -1,0 +1,31 @@
+// JACKRO - Code & Design
+// The Free Code and Design Template for Developers and Designers.
+// Created using Moonshine, A Scalable and maintainable architecture.
+//
+// Author:   Jack Ryan Oracoy
+// Website:  https://jackryanoracoy.github.io
+// Email:    jackryanoracoy@gmail.com
+// URL:      https://github.com/jackryanoracoy/moonshine
+// License:  https://github.com/jackryanoracoy/moonshine/blob/master/LICENSE.txt
+
+/*--------------------------------------------------
+  Hover effect
+--------------------------------------------------*/
+
+.u-hover-effect {
+  position: relative;
+  z-index: 1;
+  transition: $transition;
+
+  &--zoom-in {
+    transform: scale(1);
+    &:hover { transform: scale(1.2); }
+  }
+
+  &--zoom-out {
+    transform: scale(1);
+    &:hover { transform: scale(0.8); }
+  }
+
+  &:hover { z-index: 2; }
+}

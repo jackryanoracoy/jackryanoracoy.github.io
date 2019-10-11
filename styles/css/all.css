@@ -3103,19 +3103,17 @@ textarea {
   Card
 --------------------------------------------------*/
 .c-card {
+  position: relative;
   color: #212121 !important;
   background-color: #FAFAFA;
   border-radius: 2px;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(0, 0, 0, 0.15);
 }
-.c-card--dark {
-  color: #FAFAFA !important;
-  background-color: #212121;
-}
 .c-card__image {
   position: relative;
   height: 200px;
+  overflow: hidden;
 }
 .c-card__image img {
   width: 100%;
@@ -11923,6 +11921,35 @@ textarea {
 
 .u-image-block {
   display: block;
+}
+
+/*--------------------------------------------------
+  Hover effect
+--------------------------------------------------*/
+.u-hover-effect {
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 300ms ease-in-out 120ms;
+  transition: all 300ms ease-in-out 120ms;
+}
+.u-hover-effect--zoom-in {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.u-hover-effect--zoom-in:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.u-hover-effect--zoom-out {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.u-hover-effect--zoom-out:hover {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+.u-hover-effect:hover {
+  z-index: 2;
 }
 
 /*# sourceMappingURL=all.css.map */

@@ -13,19 +13,16 @@
 --------------------------------------------------*/
 
 .c-card {
+  position: relative;
   color: $dark !important;
-  background-color: $light;
+  background-color: $card-bg;
   border-radius: 2px;
   box-shadow: $z-depth-1;
 
-  &--dark {
-    color: $light !important;
-    background-color: $dark;
-  }
-
   &__image {
     position: relative;
-    height: 200px;
+    height: $card-img-height;
+    overflow: hidden;
 
     & img {
       width: 100%;
@@ -37,7 +34,7 @@
 
   &__content {
     position: relative;
-    height: calc(100% - 200px);
+    height: calc(100% - #{$card-img-height});
     padding: 20px 10px;
   }
 

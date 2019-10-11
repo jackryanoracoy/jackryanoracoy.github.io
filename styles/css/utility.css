@@ -8419,4 +8419,33 @@
   display: block;
 }
 
+/*--------------------------------------------------
+  Hover effect
+--------------------------------------------------*/
+.u-hover-effect {
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 300ms ease-in-out 120ms;
+  transition: all 300ms ease-in-out 120ms;
+}
+.u-hover-effect--zoom-in {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.u-hover-effect--zoom-in:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.u-hover-effect--zoom-out {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.u-hover-effect--zoom-out:hover {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+.u-hover-effect:hover {
+  z-index: 2;
+}
+
 /*# sourceMappingURL=utility.css.map */

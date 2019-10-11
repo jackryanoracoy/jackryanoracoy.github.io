@@ -166,19 +166,17 @@
   Card
 --------------------------------------------------*/
 .c-card {
+  position: relative;
   color: #212121 !important;
   background-color: #FAFAFA;
   border-radius: 2px;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(0, 0, 0, 0.15);
 }
-.c-card--dark {
-  color: #FAFAFA !important;
-  background-color: #212121;
-}
 .c-card__image {
   position: relative;
   height: 200px;
+  overflow: hidden;
 }
 .c-card__image img {
   width: 100%;
