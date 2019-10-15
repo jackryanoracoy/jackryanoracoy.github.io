@@ -8424,9 +8424,9 @@
 --------------------------------------------------*/
 .u-hover-effect {
   position: relative;
-  z-index: 1;
   -webkit-transition: all 300ms ease-in-out 120ms;
   transition: all 300ms ease-in-out 120ms;
+  z-index: 1;
 }
 .u-hover-effect--zoom-in {
   -webkit-transform: scale(1);

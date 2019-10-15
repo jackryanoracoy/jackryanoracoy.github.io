@@ -9,23 +9,12 @@
 // License:  https://github.com/jackryanoracoy/moonshine/blob/master/LICENSE.txt
 
 /*--------------------------------------------------
-  Hover effect
+  Footer nav
 --------------------------------------------------*/
 
-.u-hover-effect {
-  position: relative;
-  transition: $transition;
-  z-index: 1;
+.c-footer-nav {
+  list-style: none;
+  font-size: $font-md;
 
-  &--zoom-in {
-    transform: scale(1);
-    &:hover { transform: scale(1.2); }
-  }
-
-  &--zoom-out {
-    transform: scale(1);
-    &:hover { transform: scale(0.8); }
-  }
-
-  &:hover { z-index: 2; }
+  & a { color: $light; }
 }

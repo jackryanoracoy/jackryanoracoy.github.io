@@ -94,11 +94,11 @@ body ::-webkit-scrollbar-thumb {
   Links
 --------------------------------------------------*/
 a {
-  color: #2196F3;
+  color: #B71C1C;
   text-decoration: none;
 }
 a:hover, a:visited, a:active, a:focus {
-  color: #2962FF;
+  color: #880E4F;
   text-decoration: underline;
 }
 @media print {
