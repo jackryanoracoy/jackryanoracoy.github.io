@@ -15,4 +15,12 @@
 .l-site-footer {
   position: relative;
   z-index: 1;
+
+  & a {
+    color: $grey-300;
+
+    &:hover, &:visited, &:active, &:focus {
+      color: $grey-500;
+    }
+  }
 }

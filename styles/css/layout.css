@@ -2506,6 +2506,12 @@
   position: relative;
   z-index: 1;
 }
+.l-site-footer a {
+  color: #E0E0E0;
+}
+.l-site-footer a:hover, .l-site-footer a:visited, .l-site-footer a:active, .l-site-footer a:focus {
+  color: #9E9E9E;
+}
 
 /*--------------------------------------------------
   Site-atf
@@ -2551,5 +2557,4 @@
   position: sticky;
   top: 100px;
 }
-
 /*# sourceMappingURL=layout.css.map */
