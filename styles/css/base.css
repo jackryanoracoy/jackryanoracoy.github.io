@@ -17,8 +17,7 @@
 *:after {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 @media print {
   *,
@@ -26,8 +25,7 @@
   *:after {
     background: transparent !important;
     color: #000 !important;
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important;
+    box-shadow: none !important;
     text-shadow: none !important;
   }
 }
@@ -46,8 +44,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /*--------------------------------------------------
@@ -140,7 +137,6 @@ pre {
     orphans: 3;
     widows: 3;
   }
-
   h2, h3 {
     page-break-after: avoid;
   }
@@ -239,9 +235,9 @@ button, select {
   Remove the inner border and padding in Firefox.
 --------------------------------------------------*/
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -250,9 +246,9 @@ button::-moz-focus-inner,
   Restore the focus styles unset by the previous rule.
 --------------------------------------------------*/
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -274,8 +270,8 @@ textarea {
   Correct the cursor style of increment and
   decrement buttons in Chrome.
 --------------------------------------------------*/
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -283,19 +279,17 @@ textarea {
   Correct the odd appearance in Chrome and Safari.
   Correct the outline style in Safari.
 --------------------------------------------------*/
-[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /*--------------------------------------------------
   Remove the inner padding and cancel buttons
   in Chrome and Safari on macOS.
 --------------------------------------------------*/
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -315,5 +309,3 @@ textarea {
 [hidden] {
   display: none;
 }
-
-/*# sourceMappingURL=base.css.map */

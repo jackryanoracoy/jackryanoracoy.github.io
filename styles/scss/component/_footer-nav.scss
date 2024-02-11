@@ -16,5 +16,26 @@
   list-style: none;
   font-size: $font-md;
 
-  & a { color: $light; }
+  &__item {
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 15px;
+    text-align: center;
+    transform: translateY(-50%);
+  }
+
+  &__item a {
+    display: block;
+    padding-left: 20px;
+    color: $light;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
 }

@@ -65,8 +65,7 @@
   text-overflow: ellipsis;
   border-radius: 20px;
   background-color: #B71C1C;
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(0, 0, 0, 0.15);
-          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(0, 0, 0, 0.15);
   overflow: hidden;
   white-space: nowrap;
 }
@@ -74,8 +73,7 @@
   text-decoration: none;
 }
 .c-button:hover {
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 4px 4px -4px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 4px 4px -4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 4px 4px -4px rgba(0, 0, 0, 0.2);
 }
 .c-button--cta {
   min-width: 50px;
@@ -92,7 +90,6 @@
 }
 .c-button--gradient {
   color: #FAFAFA !important;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#B71C1C), to(#880E4F));
   background-image: linear-gradient(to bottom right, #B71C1C, #880E4F);
 }
 .c-button--secondary {
@@ -135,7 +132,7 @@
   width: 50px;
   height: 50px;
   content: "\f054";
-  font-family: 'Font Awesome 5 Free';
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
   text-align: center;
   background-color: rgba(250, 250, 250, 0.15);
@@ -144,22 +141,15 @@
   background-color: rgba(250, 250, 250, 0.25);
 }
 .c-button--fluid-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   color: #FAFAFA !important;
   background-color: rgba(33, 33, 33, 0.75);
   border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 /*--------------------------------------------------
@@ -170,8 +160,7 @@
   color: #212121 !important;
   background-color: #FAFAFA;
   border-radius: 2px;
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(0, 0, 0, 0.15);
-          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(0, 0, 0, 0.15);
 }
 .c-card__image {
   position: relative;
@@ -268,24 +257,10 @@
   }
   .c-heading-above-the-fold__easter-egg {
     color: #E0E0E0;
-    -webkit-animation-name: fadein;
-            animation-name: fadein;
-    -webkit-animation-duration: 300ms;
-            animation-duration: 300ms;
-    -webkit-animation-delay: 1200ms;
-            animation-delay: 1200ms;
-    -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-  }
-  @-webkit-keyframes fadein {
-    from {
-      margin-left: -100%;
-      opacity: 0;
-    }
-    to {
-      margin-left: 0;
-      opacity: 1;
-    }
+    animation-name: fadein;
+    animation-duration: 300ms;
+    animation-delay: 1200ms;
+    animation-fill-mode: both;
   }
   @keyframes fadein {
     from {
@@ -344,15 +319,9 @@
   text-decoration: none;
 }
 .c-site-menu__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 20px;
   height: 20px;
 }
@@ -370,7 +339,6 @@
   width: 100%;
   height: 3px;
   background-color: #FAFAFA;
-  -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
 .c-site-menu__text {
@@ -387,28 +355,20 @@
 }
 .c-site-menu.js-active .c-site-menu__inner::before {
   top: 0;
-  -webkit-transform: rotate(-40deg);
-          transform: rotate(-40deg);
+  transform: rotate(-40deg);
 }
 .c-site-menu.js-active .c-site-menu__inner::after {
   bottom: 0;
-  -webkit-transform: rotate(40deg);
-          transform: rotate(40deg);
+  transform: rotate(40deg);
 }
 
 /*--------------------------------------------------
   Site-nav
 --------------------------------------------------*/
 .c-site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   list-style: none;
-  -webkit-transition: all 300ms ease-in-out 120ms;
   transition: all 300ms ease-in-out 120ms;
 }
 .c-site-nav:hover .c-site-nav__item {
@@ -420,7 +380,6 @@
 .c-site-nav__item {
   position: relative;
   overflow: hidden;
-  -webkit-transition: all 300ms ease-in-out 120ms;
   transition: all 300ms ease-in-out 120ms;
 }
 .c-site-nav__item a {
@@ -444,10 +403,7 @@
 }
 @media (min-width: 992px) {
   .c-site-nav {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
   .c-site-nav__item::after {
     position: absolute;
@@ -460,7 +416,6 @@
     height: 1px;
     background-color: #212121;
     opacity: 0;
-    -webkit-transition: all 300ms ease-in-out 120ms;
     transition: all 300ms ease-in-out 120ms;
   }
   .c-site-nav:hover .c-site-nav__item--active::after {
@@ -479,14 +434,12 @@
   .c-site-nav__item--branding {
     max-width: 0;
     opacity: 0;
-    -webkit-transition: all 500ms ease-in-out;
     transition: all 500ms ease-in-out;
   }
   .c-site-nav__item--branding.js-show.js-active {
     max-width: 100%;
     opacity: 1 !important;
-    -webkit-transition-delay: 500ms;
-            transition-delay: 500ms;
+    transition-delay: 500ms;
   }
   .c-site-nav__item--branding::after {
     display: none !important;
@@ -506,8 +459,7 @@
     width: 70px !important;
     max-height: 60px;
     text-align: center;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
   }
   .c-site-nav__item--branding {
     display: none;
@@ -518,12 +470,8 @@
   Site-title
 --------------------------------------------------*/
 .c-site-branding {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   height: 60px;
   color: #FAFAFA !important;
   font-family: "Open Sans Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -545,6 +493,7 @@
   display: block;
   max-width: 90px;
 }
+
 .c-site-branding__title {
   padding-left: 10px;
   font-size: inherit;
@@ -558,7 +507,6 @@
   .c-site-branding__easter-egg {
     color: #212121;
     opacity: 1;
-    -webkit-transition: all 300ms ease-in-out 120ms;
     transition: all 300ms ease-in-out 120ms;
   }
   .c-site-branding:not(:hover) .c-site-branding__easter-egg {
@@ -583,8 +531,25 @@
   list-style: none;
   font-size: 1.4rem;
 }
-.c-footer-nav a {
+.c-footer-nav__item {
+  position: relative;
+}
+.c-footer-nav__icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 15px;
+  text-align: center;
+  transform: translateY(-50%);
+}
+.c-footer-nav__item a {
+  display: block;
+  padding-left: 20px;
   color: #FAFAFA;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 /*--------------------------------------------------
@@ -636,25 +601,14 @@
 .c-form button:disabled:hover, .c-form input[type=button]:disabled:hover, .c-form input[type=submit]:disabled:hover {
   cursor: auto;
   opacity: 0.5;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 .c-form button, .c-form textarea, .c-form input[type=text], .c-form input[type=email], .c-form input[type=button], .c-form input[type=number], .c-form input[type=submit] {
   outline: none;
   -moz-appearance: none;
   -webkit-appearance: none;
 }
-.c-form ::-webkit-input-placeholder {
-  color: inherit;
-  font-size: 1.4rem;
-  line-height: 40px;
-}
-.c-form :-ms-input-placeholder {
-  color: inherit;
-  font-size: 1.4rem;
-  line-height: 40px;
-}
-.c-form ::-ms-input-placeholder {
+.c-form ::-moz-placeholder {
   color: inherit;
   font-size: 1.4rem;
   line-height: 40px;
@@ -667,5 +621,3 @@
 .c-form #honeypot {
   display: none;
 }
-
-/*# sourceMappingURL=component.css.map */
