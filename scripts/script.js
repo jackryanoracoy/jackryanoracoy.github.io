@@ -23,7 +23,7 @@ $(document).ready(function($) {
         $(".c-site-nav__item--branding").removeClass("js-show");
       }
 
-      if (scroll >= 140) {
+      if (scroll >= 90) {
         $(".l-site-header, .c-site-nav__item--branding").addClass("js-active");
       } else {
         $(".l-site-header, .c-site-nav__item--branding").removeClass("js-active");
