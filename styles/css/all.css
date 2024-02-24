@@ -1984,7 +1984,7 @@ textarea {
   padding: 15px 0 0;
 }
 .l-article--padding-no {
-  padding: 0;
+  padding: 0 !important;
 }
 .l-article--padding-wide {
   padding: 50px 0 0;
