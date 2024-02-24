@@ -2730,11 +2730,11 @@ textarea {
   height: 10px;
   vertical-align: middle;
 }
-.c-form input[type=text], .c-form input[type=email], .c-form input[type=number] {
+.c-form input[type=text], .c-form input[type=email], .c-form input[type=number], .c-form input[type=tel] {
   width: 100%;
   height: 40px;
 }
-.c-form textarea, .c-form input[type=text], .c-form input[type=email], .c-form input[type=number] {
+.c-form textarea, .c-form input[type=text], .c-form input[type=email], .c-form input[type=number], .c-form input[type=tel] {
   padding: 0 10px;
   color: inherit;
   font-size: 1.4rem;
@@ -2753,7 +2753,7 @@ textarea {
   opacity: 0.5;
   box-shadow: none;
 }
-.c-form button, .c-form textarea, .c-form input[type=text], .c-form input[type=email], .c-form input[type=button], .c-form input[type=number], .c-form input[type=submit] {
+.c-form button, .c-form textarea, .c-form input[type=text], .c-form input[type=email], .c-form input[type=button], .c-form input[type=number], .c-form input[type=tel], .c-form input[type=submit] {
   outline: none;
   -moz-appearance: none;
   -webkit-appearance: none;

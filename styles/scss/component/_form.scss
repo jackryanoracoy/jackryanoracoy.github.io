@@ -41,7 +41,8 @@
 
   & input[type=text],
   & input[type=email],
-  & input[type=number] {
+  & input[type=number],
+  & input[type=tel] {
     width: 100%;
     height: $input-height;
   }
@@ -49,7 +50,8 @@
   & textarea,
   & input[type=text],
   & input[type=email],
-  & input[type=number] {
+  & input[type=number],
+  & input[type=tel]  {
     padding: 0 10px;
     color: inherit;
     font-size: $font-md;
@@ -81,6 +83,7 @@
   & input[type=email],
   & input[type=button],
   & input[type=number],
+  & input[type=tel] ,
   & input[type=submit] {
     outline: none;
     -moz-appearance: none;
